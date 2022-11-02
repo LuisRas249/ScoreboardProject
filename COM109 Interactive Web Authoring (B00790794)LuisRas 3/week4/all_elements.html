@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--meta: enabling documentation files and folders within a project-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<Title of tab website-->
+    <title>Stage 5 - All Elements Week 2, 3, and 4</title>
+    <!--CSS and JS-->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+    <!--FONT-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,700&display=swap" rel="stylesheet">
+</head>
+<!--Written By: Luis Ras-->
+<!--Date:12/10/2021-->
+<!--Version:1.0-->
+<body>
+    <header id="top">
+        <div class="jumbotron">
+            <h1>Toolkit of HTML5 Elements</h1>
+        </div>
+    </header>
+    <!--This is a navigation bar-->
+    <nav>
+        <ul id="practical">
+            <li><a href="../week3/stage1.html">Stage 1</a></li>
+            <li><a href="../week3/stage2.html">Stage 2</a></li>
+            <li><a href="../week3/stage3.html">Stage 3</a></li>
+            <li><a href="../week3/stage4.html">Stage 4</a></li>
+            <li><a href="/week4/all_elements.html">Stage 5</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <article class="container">
+            <h2>Heading level 2</h2>
+            <h3>Heading level 3</h3>
+            <h4>Heading level 4</h4>
+            <h5>Heading level 5</h5>
+            <h6>Heading level 6</h6>
+            <p>
+                The semantics of the article element is related to the fact that artivles are intended as self-conf...
+            </p>
+            <p><a
+                    href="http://www.cellbiol.com/bioinformatics_web_development/chapter-3-your-first-web-page-learning-html-and-css/introducing-html5-footer-header-nav-article-section-and-aside-elements/">More
+                    on the structure of content in HTML5 - header/section/article/aside/footer</a></p>
+        </article>
+        <!--adding spacing and strucutre by adding a horizontal line known as element 'hr'-->
+        <hr>
+        <!--using 'br' to break a paragraph line-->
+        <p>This is a paragraph <br> with the line break.</p>
+        <p>This is <br> another paragraph <br> with line breaks.</p>
+        <hr>
+        <!--Here below are different element paragraph styles-->
+        <p>This is a <b>Bold Text</b>.</p>
+        <p>This is <strong>Strongly Important Text</strong>.</p>
+        <p>This is <i>Italic Text</i>.</p>
+        <p>This is <em>Emphasized Text</em>.</p>
+        <p>This is <mark>Highlighted Text</mark>.</p>
+        <p>This is <code>Computer Code Text</code>.</p>
+        <p>This is <small>Smaller Text</small>.</p>
+        <p>This is <sub>Subscript</sub> snd <sup>Superscript</sup> text.</p>
+        <p>This is <del>Deleted Text</del>.</p>
+        <p>This is <ins>Inserted Text</ins>.</p>
+        <hr>
+        <!--
+        <aside>
+            <p><a
+                    href="http://www.cellbiol.com/bioinformatics_web_development/chapter-3-your-first-web-page-learning-html-and-css/introducing-html5-footer-header-nav-article-section-and-aside-elements/">More
+                    on the structure of content in HTML5 - header/section/article/aside/footer</a></p>
+            <p><a href="https://www.toptal.com/developers/htmlshell/" target="_blank">htmlshell.com</a></p>
+        </aside>
+-->
+        <hr>
+        <pre>
+        The pre
+            element preserves   spaces,
+                line-breaks, tabs...
+    </pre>
+        <hr>
+        <!--Using subscript and superscript-->
+        <p>H<sub>2</sub>O is the chemical formula for water.It should never be confused with
+            H<sub>2</sub>SO<sub>4</sub>,
+            C<sub>11</sub>H<sub>15</sub>NO<sub>2</sub> or even C <sub>17</sub>H <sub>21</sub>NO <sub>4</sub></p>
+        <hr>
+        <blockquote>
+            <p>This is an example of a long quotation.</p>
+        </blockquote>
+        <p>This is an example of <q>short inline</q>quotation.</p>
+        <hr>
+        <!--Use &lt; and &gt; to not emply that a particular word or paragraph is an element-->
+        <p>The <abbr title="Hyper Text Markup Language">HTML</abbr>is the publishing language of the World Wide Web.</p>
+        <p><strong>Warning</strong> The &lt;acronym&gt; tag has been removed in HTML5 and shouldnt be used anymore.</p>
+        <p>Use &lt;abbr&gt; tag instead</p>
+        <hr>
+        <!--Fonts and using Font Awesome-->
+        <h2>Using Font Awesome</h2>
+        <i class="fa fa-car"></i>This shows a car<br>
+        <i class="fa fa-car" style="font-size: 30px;">This shows a large car</i><br>
+        <i class="fa fa-car" style="font-size: 60px; color: red;">This shows a larger coloured car in red</i>
+        <hr>
+        <section>
+            <h2>Good practice to title a section</h2>
+            <nav>
+                <h2>Unorder To Do List</h2>
+                <ul>
+                    <li><a href="#top">Header</a></li>
+                    <li><a href="#end">Footer</a></li>
+                    <li><del>Relaxation Time</del></li>
+                    <li>Visit a Doctor</li>
+                </ul>
+            </nav>
+            <p>A websites homepage could be split into sections for an introduction, news item, and contact information
+            </p>
+            <hr>
+            <ol>
+                <li id="one">Fasten your seatbelt</li>
+                <li id="two">Starts the car's engine</li>
+                <li id="three">Look around and go</li>
+            </ol>
+            <hr>
+            <h2>Nested Ordered List</h2>
+            <ol>
+                <li>Fasten your seatbelt</li>
+                <li>Starts the car's engine</li>
+                <li>Look around and go
+                    <ol>
+                        <li>Check the blind spot</li>
+                        <li>Check surrounding for safety</li>
+                    </ol>
+                </li>
+            </ol>
+            <hr>
+            <h2>Definition List</h2>
+            <dl>
+                <dt>Bread</dt>
+                <dd>A baked food made of flour.</dd>
+                <dt>Coffee</dt>
+                <dd>A drink made from roasted coffee beans.</dd>
+            </dl>
+            <hr>
+            <h2>Nested List</h2>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2
+                    <ul>
+                        <li>Item 2.1</li>
+                        <li>Item 2.2</li>
+                        <li>Item 2.3</li>
+                    </ul>
+                </li>
+                <li>Item 3
+                    <ul>
+                        <li>Item 3.1</li>
+                        <li>Item 3.2</li>
+                        <ul>
+                            <li>Item 3.2.1</li>
+                            <li>Item 3.2.2</li>
+                            <li>Item 3.2.3</li>
+                        </ul>
+                        <li>Item 3.3</li>
+                    </ul>
+                </li>
+            </ul>
+            <hr>
+            <p>The esequence "1-2-3-4-5" was reversed as: <bdo dir="rtl">1-2-3-4-5</bdo></p>
+            <hr>
+            <!--Different types of font styles-->
+            <p><code>Computer Code Text</code></p>
+            <p><kbd>Keyboard Input</kbd></p>
+            <p><samp>Sample Text</samp></p>
+            <p><var>Computer Variable</var></p>
+            <p><strong>Note:</strong>These tags are often used to represent a fragment of computer code.</p>
+            <hr>
+            <p><a href="https://www.ulster.ac.uk/">Visit Ulster Website</a></p>
+            <p><a href="#top"><img src="./images/drift_car.jpg" style="vertical-align: top;" width="300" height="200"
+                        alt="Image of a drifting car"></a></p>
+            <p><a href="https://www.google.com/">Google Search</a></p>
+            <hr>
+            <p><a href="#top">Jump link to the top of the page</a></p>
+            <hr>
+            <!--Example how to make a table using HTML-->
+            <h2>HTML Table (Default Style)</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>Name</th>
+                        <th>Age</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Peter Parker</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Doctor Octopus</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Harry Osborne</td>
+                        <td>17</td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+            <div style="color: green; font-size: 18px;">This is some text.</div>
+            <hr>
+            <p><span id="greet"></span></p>
+            <!--Example of the use of script-->
+            <!--In this document file get the element by id 'greet' and take the inner HTML and make it say 'Hello World!'-->
+            <script>
+                document.getElementById("greet").innerHTML = "Hello World!";
+            </script>
+            <noscript>
+                <p>Sprry, your browser does not support JavaScript!</p>
+            </noscript>
+            <hr>
+            <!--Example on how to create a simple interactive form-->
+
+            <form>
+                <label>First Name:<input type="text" id="first_name"></label>
+                <button type="button" class="btn btn-lg"><i class="fa fa-home"></i>Save
+                    Name</button>
+                <button type="button" class="btn btn-lg">Show my name</button>
+                <button type="button" class="btn btnsearch btn-lg">Search</button>
+            </form>
+            <hr>
+            <!--How to use and structure by using columns-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h3>Column 1</h3>
+                        <p>Lorem ipsum dolor...</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <h3>Column 2</h3>
+                        <p>Lorem ipsum dolor...</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <h3>Column 3</h3>
+                        <p>Lorem ipsum dolor...</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </section>
+        <hr>
+        <!--Footer Section-->
+        <footer id="end" style="text-align: center;">
+            <address>
+                Written by <a href="Ras-L@ulster.ac.uk">Luis Ras</a><br>
+                Contact Me: <br>
+                08834739218 <br>
+            </address>
+        </footer>
+        <hr>
+        <p>
+            <a href="https://jigsaw.w3.org/css-validator/#validate_by_input"><img
+                    style="border: 0; width: 100px; height: 40px;" src="./images/valid_css.png" alt="Valid CSS"></a>
+        </p>
+    </div>
+    <!--Script sources to enhance overall UI and UX experience using JS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script>
+        //Check if the localStorage object exists
+        if (localStorage) {
+            $(document).ready(function () {
+                $(".save").click(function () {
+                    //Get input name
+                    var first_name = $("first_name").val();
+
+                    //Store the data
+                    localStorage.setItem("first_name", first_name);
+                    alert("Your first name is saved");
+                });
+                $(".access").click(function () {
+                    //Retrieve the data
+                    alert("Hi, " + localStorage.getItem("first_name"));
+                });
+            });
+        }
+        else {
+            alert("Sorry, your browser does not support local storage.");
+        }
+        
+        $(document).ready(function () {
+            //Add smooth scrolling to all links
+            $("a").on('click', function (event) {
+                //Make sure this.hash has a value before overriding default behaviour
+                if (this.hash !== "") {
+                    //Prevent default anchor click behaviour
+                    event.preventDefault();
+
+                    //Store hash
+                    var hash = this.hash;
+
+                    //Using jQuerys animate() method to add a smooth page scroll
+                    //The optional number (800) specifies the number of milliseconds for the animation to scroll to its specified place
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 2800, function () {
+
+                        //Add hash (#) to the URL when done scrolling (default click browser)
+                        window.location.hash = hash;
+                    });
+                } //End if
+            });
+        });
+    </script>
+</body>

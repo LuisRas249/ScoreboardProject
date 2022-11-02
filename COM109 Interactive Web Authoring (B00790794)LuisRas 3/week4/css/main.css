@@ -1,0 +1,150 @@
+@charset "UTF-8";
+
+html body{
+    background-color: rgb(101, 176, 206);
+}
+
+header .jumbotron{
+    background-color: rgb(0, 214, 125);
+}
+
+h1 {
+    color: blue;
+    text-align: center;
+}
+
+p {
+    color: black;
+}
+
+article {
+    border: 2px solid powderblue;
+    border-radius: 50px 20px;
+    padding: 20px 0px 0px 20px;
+}
+
+#ul li{
+    background: salmon;
+}
+
+ul.in li{
+    list-style-position: inside;
+}
+
+ul.out li{
+    list-style-position: outside;
+}
+
+table{
+    width: 300px;
+    text-align: left;
+}
+
+table, th, td{
+    text-align: left;
+    border: 1px solid black;
+}
+
+#top{
+    margin-top: 58px;
+    padding: 40px 40px 40px 40px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+}
+
+nav{
+    background-color: rgb(0, 214, 125);
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav li{
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px;
+}
+
+aside{
+    position: absolute;
+    top: 350px;
+    left: 1200px;
+    padding: 3px;
+}
+
+/*NavBar*/
+body{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul{
+    padding: 0px 0px 0px 0px;
+    list-style: none;
+    background: #89CFF0;
+    border-top: 1px 1px 1px 1px solid #000080;
+    text-decoration: none;
+}
+
+#practical{
+    list-style: none;
+    margin: 0;
+    
+}
+
+#practical li{
+    padding: 0px 0px 0px 0px;
+    margin: 0;
+    display: inline-block;
+    
+}
+
+#practical li a{
+    display: inline-block;
+    padding: 10px 25px;
+    color: #000080;
+    text-decoration: none;
+    
+}
+
+#practical li a{
+    border: 0;
+    background-image: url('/week4/images/apple-touch-icon.png');
+    background-size: 0.75em;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-color: #89CFF0;
+    margin-right: 20px;
+}
+
+#practical li a:hover{
+    background-color: #000080;
+    color: #89CFF0;
+}
+
+/*Styling buttons*/
+form .btn{
+    background-color: rgb(0, 175, 175);
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form .btnsearch{
+    background-color: rgb(0, 177, 94);
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/*When mouse hovers over buttons*/
+form .btn:hover{
+    background-color: tomato;
+}
+

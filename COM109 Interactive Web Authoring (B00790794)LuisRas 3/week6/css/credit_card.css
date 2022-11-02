@@ -1,0 +1,10 @@
+fieldset{
+    border:2px solid green;
+    -moz-border-radius:8px;
+    -webkit-border-radius:8px;  
+    border-radius:8px;
+}
+
+
+/*This will highlight the error message to red*/
+.error { color: red;}

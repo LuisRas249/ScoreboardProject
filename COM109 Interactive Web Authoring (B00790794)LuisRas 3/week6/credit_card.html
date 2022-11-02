@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--meta: enabling documentation files and folders within a project-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Luis Ras">
+    <meta name="Description" content="Bio file info">
+    <meta name="Keywords" content="Luis Ras' Website | Feedback2">
+    <!--CSS and JS-->
+    <link rel="stylesheet" type="text/css" href="screenlayout2.css" media="screen,projector">
+    <link rel="stylesheet" href="/week6/css/credit_card.css">
+    <!--<Title of tab website-->
+    <title>Feedback 2</title>
+    <style>
+        /*Adding Internal Style for H1 and P1*/
+    </style>
+</head>
+<!--Written By: Luis Ras-->
+<!--Date:05/10/2021-->
+<!--Version:3.0-->
+
+<body>
+    <div>
+        <h1>Example of User Collected Data in a FORM being validated for Credit Card</h1>
+    </div>
+    <h2>Card Details</h2>
+    <div id="signup">
+        <form id="myForm" name="formdata" method="post" action="">
+
+            <label for="nameCC">Name:</label>
+            <input type="text" name="nameCC" id="nameCC" value="Name Not Set"><span class="error" id="err_name">Please
+                enter a valid name (of at least 4 characters)</span><br>
+
+            <label for="cardNumber">Card Number:</label>
+            <input type="text" name="cardNumber" id="cardNumber" placeholder="XXXX XXXX XXXX XXXX"><span class="error"
+                id="err_email">Please enter a valid credit card number</span><br>
+
+            <label for="post_info"></label>
+            <input type="submit" value="Check Card" id="submit">
+
+        </form>
+    </div>
+
+    <div id="output">
+        <p>Before Sending...</p>
+    </div>
+
+    <!--SCRIPTS JS any code that is needed to control the client browser-->
+    <!-- This is where the jQuery should be placed  -->
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        function validCard(inputtxt) {
+            //  XXXX XXXX XXXX XXXX
+            var cardNo = /^([0-9]{4})[ ]?([0-9]{4})\)?[ ]?([0-9]{4})[ ]?([0-9]{4})$/;
+            alert(inputtxt + " " + cardNo);
+            if (inputtxt.match(cardNo)) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+
+        $(document).ready(function () {
+
+            $(".error").hide();
+            // Have the cursor in the first input box on loading the page
+            $("#nameCC").focus();
+
+            $('#myForm').submit(function (evt) {
+                evt.preventDefault();               // stop the natural HTML FORM submit
+                error = false;
+                $(".error").hide();
+
+                var cardNumber = $("#cardNumber").val();      // get the current email from the FORM
+                var name = $("#nameCC").val();    // get the current email from the FORM
+
+                // test if it is ok to send
+                if (name.length < 4)                // must be at least 4 characters long
+                {
+                    $("#err_name").show();          // if true then show error message for name
+                    error = true;
+                }
+                if (!validCard(cardNumber)) { // if card is invalid then show error message for card number
+                    $("#err_email").show();
+                    error = true;
+                }
+                if (error)                     
+                    alert("Issues, Invalid Input!");//alert message
+                else
+                    console.log("Submitting your inputs as they are valid:" + cardNumber);
+            });
+
+            // any new p added as a result of the php code executing needs the on method so the event listner can register the interaction
+            $("p").on({
+                //Hovering will highlight paragraph to lightgray
+                mouseenter: function () { $(this).css("background-color", "lightgray"); },
+                mouseleave: function () { $(this).css("background-color", "lightblue"); },
+                //Double Clicking will highlight paragraph to yellow
+                dblclick: function () { $(this).css("background-color", "yellow"); }
+            });
+        }); // end ready
+    </script>
+
+
+</body>

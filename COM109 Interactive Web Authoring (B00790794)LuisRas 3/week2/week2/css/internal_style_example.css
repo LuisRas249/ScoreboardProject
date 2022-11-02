@@ -1,0 +1,18 @@
+/*Moving main header to the center*/
+/*Internal_style_example*/
+h1{
+    text-align: center;
+}
+
+/*Paragraph Width*/
+p{
+    width: 300px;
+}
+
+/*Main Background Colour*/
+body{
+    background-color: aquamarine;
+}
+
+
+

@@ -1,0 +1,25 @@
+/*Final CSS V1.0*/
+
+body{
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', Arial, sans-serif;
+    font-size: 14px;
+    color: lightblue;
+    background-color: #0047AB;
+    border-top: 0px solid #0047AB;
+    margin: 0; /*This is so the border top sits tight to the top of the page.*/
+}
+/*Layout*/
+
+#container{
+    width: 650px;
+    margin: 0 auto;
+    padding-left: 20px;
+    background-color: #191970;
+    border-bottom: 5px solid #191970;
+}
+
+#header{
+    text-align: center;
+    background-color: #0F4D92;
+    padding-top: 40px;
+}

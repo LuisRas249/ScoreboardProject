@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--meta: enabling documentation files and folders within a project-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Luis Ras">
+    <meta name="Keywords" content="Luis Ras' Website | World Rally Championship Leaderboard">
+    <!--<Title of tab website-->
+    <title>≈ World Rally Championship Leaderboard ≈</title>
+    <link rel="shortcut icon" href="./images/flag_icon.png">
+    <!--CSS-->
+    <link rel="stylesheet" href="../leaderboard/css/leaderboard.css">
+    <!-- Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--FONTS-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,700&display=swap" rel="stylesheet">
+    <!--FONTS-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,700&display=swap" rel="stylesheet">
+</head>
+
+<!--Written By: Luis Ras (B00790794)-->
+<!--Date:02/11/2021-->
+<!--Version:1.0-->
+
+<body>
+    <!--START OF HEADER-->
+    <header>
+        <!--Main Logo and Title-->
+        <a href="leaderboard.html" class="header_logo text-dark bg-warning">≈WRC<img src="./images/flag_icon.png"
+                alt="flag"></a>
+        <!--HEADER ANIMATION-->
+        <nav class="overlay">
+            <div class="active"></div>
+        </nav>
+    </header>
+    <!--LEADERBOARD-->
+    <div class="container">
+        <!--Ordered List of Rally Racers and Racer Points-->
+        <ol class="leaderboard_menu">
+            <li>
+                <div class="racer p-3 mb-2 bg-success text-warning" id="racer_id_1">
+                    <img src="images/flag_icon.png" alt="flag">
+                    <p id="r_name_1">Kobe</p>
+                    <p id="r_points_1">60 Points</p>
+                </div>
+            </li>
+            <li>
+                <div class="racer p-3 mb-2 bg-dark text-white" id="racer_id_2">
+                    <img src="images/flag_icon.png" alt="flag">
+                    <p id="r_name_2">McRae</p>
+                    <p id="r_points_2">57 points</p>
+                </div>
+            </li>
+            <li>
+                <div class="racer p-3 mb-2 bg-dark text-white" id="racer_id_3">
+                    <img src="images/flag_icon.png" alt="flag">
+                    <p id="r_name_3">Kankkunen</p>
+                    <p id="r_points_3">54 points</p>
+                </div>
+            </li>
+            <li>
+                <div class="racer p-3 mb-2 bg-dark text-white" id="racer_id_4">
+                    <img src="images/flag_icon.png" alt="flag">
+                    <p id="r_name_4">Vatanen</p>
+                    <p id="r_points_4">48 points</p>
+                </div>
+            </li>
+            <li>
+                <div class="racer p-3 mb-2 bg-dark text-white" id="racer_id_5">
+                    <img src="images/flag_icon.png" alt="flag">
+                    <p id="r_name_5">loeb</p>
+                    <p id="r_points_5">45 points</p>
+                </div>
+            </li>
+        </ol>
+    </div>
+
+
+    <!--USER INPUT-->
+    <!--START OF FOOTER-->
+    <footer id="my_id_">
+        <!--Button to open footer to 'Add New Racer'-->
+        <div id="new_data">
+            <button class="btn btn-dark" id="add_info">Add New Racer</button>
+        </div>
+
+        <div id="racer_information">
+            <h2>≈ Racer Data Input ≈</h2>
+            <form id="racer_form" name="form_data">
+                <label for="name_racer">Enter Racer Name:</label>
+                <input type="text" class="textbox name" name="name_racer" id="name_racer" value="Racer not set">
+                <!--Create error_racer for name_racer input to notify the user to input more than 3 letters in the textbox-->
+                <span class="error" id="error_racer">(Please enter valid racer name more than 3 letters)</span>
+
+                <label for="points_racer">Racer Points:</label>
+                <!--Input type 'number' to set the minimum and maximum number options the user can enter-->
+                <input type="number" min="1" max="45" class="textbox num_points" name="points_racer" id="points_racer"
+                    placeholder="0">
+                <!--Create error_points for points_racer input to notify the user to input numbers between 1 and 45-->
+                <span class="error" id="error_points">(please enter numbers between 1 and 45)</span>
+
+                <input type="submit" class="btn btn-dark" value="Submit Racer" id="submit">
+            </form>
+        </div>
+    </footer>
+    <!--END OF FOOTER-->
+
+    <!--SCRIPTS-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">
+    </script>
+    <script src="../leaderboard/js/leaderboard.js"></script>
+
+</body>

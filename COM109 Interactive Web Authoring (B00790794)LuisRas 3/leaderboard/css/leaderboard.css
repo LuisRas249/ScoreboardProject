@@ -1,0 +1,195 @@
+/*Importing Font Style*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,500;1,700&display=swap');
+/*
+// @media screen and (min-width: 1200px)
+// @media screen and (min-width: 990)
+// @media screen and (min-width: 768)
+// @media screen and (min-width: 578)
+*/
+
+/*START OF WEB*/
+/*use '*' to style the overall web page*/
+*{
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Main Body of web page*/
+body{
+    width: 100%;
+    height: 80%;
+    background-color: white;
+    position:absolute;
+    z-index:0;
+    background-image: url('../images/wrc_leaderboard_background-min.PNG');
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*Container dimensions*/
+.container{
+    width: 100%;
+    height: 80%;
+}
+
+/*Header*/
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    height: 120px;
+    padding: 0px 0px 20px 0px;
+    z-index: 10;
+}
+
+/*Header Logo*/
+header .header_logo {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 30px;
+    font-weight: 500;
+    color: #111;
+    text-transform: uppercase;
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-size: 60px;
+    padding: 10px 10px 10px 0px;
+}
+
+/*Header and Logo hover animation*/
+header nav ul {
+    margin: 0 auto;
+    display: block;
+    width: fit-content;
+    padding: 0px 10px 0px 10px;
+    text-align: center;
+    background-color: white;
+}
+
+/*When logo is hovered activate the 'line' animation*/
+a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: " ";
+    display: block;
+    height: 10px;
+    left: 100%;
+    position: absolute;
+    background: #55ff93;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+  header p {
+    margin: 40px 0px 0px 20px;
+    float: left;   
+}
+
+/*MEDIA QUERIES*/
+/*This will make the overall website responsive*/
+@media screen and (min-width: 320px) {
+    
+    header nav ul a{
+        font-size: 80px;
+    }
+    footer h2{
+        font-size: large;
+    }
+}
+@media screen and (min-width: 578px){
+
+    header .header-logo {
+    font-size: 80px;
+    font-weight: 500;
+    }
+    
+    footer h2{
+        font-size: large;
+    }
+}
+@media screen and (min-width: 768px){
+
+    header .header-logo {
+        font-size: large;
+        padding: 0px 10px 10px 40px;
+    
+    }
+    footer h2{
+        font-size: larger;
+    }
+}
+@media screen and (min-width: 990px) {
+
+    header .header-logo {
+        font-size: xx-large;
+        margin: 30px 0px 0px;
+        text-align: left;
+        line-height: 40px;
+        padding: 0px 10px 10px 40px;
+        border-right: 3px solid #111;
+        float: left;
+    }
+
+    header p {
+        margin: 40px 0px 0px 20px;
+        float: left;   
+    }
+
+    footer h2{
+        font-size: xx-large;
+    }
+}
+
+/*Change style of RACER list*/
+.racer{
+    width: 60%;
+    height: 8%;
+    margin: .5%;
+    left: -120%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.container ol {
+    margin-top: 200px;
+    margin-bottom: 1rem;
+}
+
+/*FOOTER*/
+footer{
+    
+    width: 100%;
+    background-color: #28bd5f;
+    border-top: 10px solid rgb(241, 202, 71);
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+/*FOOTER button hover change colour*/
+footer .btn:hover{
+    background-color: rgb(241, 202, 71);
+}
+
+/*FOOTER error message*/
+.error{
+    color: rgb(255, 55, 55);
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--meta: enabling documentation files and folders within a project-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Luis Ras">
+    <meta name="Description" content="Bio file info">
+    <meta name="Keywords" content="Luis Ras' Website | Feedback">
+    <!--CSS and JS-->
+    <link rel="stylesheet" href="/week6/css/feedback.css">
+    <!--<Title of tab website-->
+    <title>Feedback - 2</title>
+    <style>
+        /*Adding Internal Style for H1 and P1*/
+    </style>
+</head>
+<!--Written By: Luis Ras-->
+<!--Date:05/10/2021-->
+<!--Version:3.0-->
+
+<body>
+    <form>
+        <fieldset id="course">
+            <legend>What I am Studying in COM109</legend>
+            <form>
+                <label for="fname">First name:</label>
+                <input type="text" id="fnameValue" name="fname"><br><br>
+                <label for="lname">Last name:</label>
+                <input type="text" id="lnameValue" name="lname"><br><br>
+                <label for="age">Age:</label>
+                <input type="number" min="1" max="100" id="ageValue" name="age"><label>(years old)</label>
+                <label for="tel">Telephone No:</label>
+                <input type="tel" name="tel" id="telValue" size="15" pattern="[0-9]{10}"
+                    placeholder="0xxxxxxxx"><br><br>
+                <label for="email">Email Addres:</label>
+                <input type="email" name="email" id="emailValue" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                    placeholder="_@gmail.com"><br><br>
+
+                <label for="university">Select the year at University</label>
+                <select name="university" id="yearValue">
+
+                    <optgroup label="UnderGrad"></optgroup>
+                    <option value="firstyear">First Year</option>
+                    <option value="secondyear">Second Year</option>
+                    <option value="thirdyear">Third Year</option>
+                    <option value="fourthyear">Fourth Year</option>
+                    <optgroup label="PostGrad"></optgroup>
+                    <option value="msc">MSc</option>
+                    <option value="phd">PhD</option>
+                </select>
+            </form>
+
+            <fieldset id="course">
+                <legend>I live at</legend>
+                <input type="radio" id="addressValue" name="address">
+                <label for="address">Home</label><br />
+
+                <input type="radio" id="addressValue" name="address">
+                <label for="address">Other</label><br />
+            </fieldset>
+
+            <fieldset id="course">
+                <legend>I like to work at this time of the day</legend>
+                <label for="time">Time:</label>
+                <input type="time" id="timeValue" name="time"><label>(0-23)</label>
+            </fieldset>
+
+            <fieldset id="course">
+                <legend>Select Topics Covered so far:</legend>
+
+                <input type="checkbox" id="c_value1" name="c_1" >
+                <label for="html5">HTML5</label>
+                <br />
+
+                <input type="checkbox" id="c_value2" name="c_2">
+                <label for="css3">CSS3</label>
+                <br />
+
+                <input type="checkbox" id="c_value2" name="c_3" >
+                <label for="ux">UX</label>
+                <br>
+                <input type="checkbox" id="c_value3" name="c_4" >
+                <label for="javascript">JavaScript</label>
+                <br>
+                <input type="checkbox" id="c_value4" name="c_5" >
+                <label for="accessibility">Accessibility</label>
+            </fieldset>
+
+            <br>
+            <label for="description">Description of what I have studied so far this Semester:</label><br><br>
+            <textarea id="description" name="description" rows="4" cols="50" placeholder="I have learned about..."></textarea><br><br>
+
+            <input type="button" id="showElements" value="Display Details" />
+        </fieldset>
+    </form>
+
+
+    <!--SCRIPTS JS any code that is needed to control the client browser-->
+    <!-- This is where the jQuery should be placed  -->
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/feedback.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $("#showElements").click(function () {
+                var output = "";
+                $('#course input, #course select').each(
+                    function (index) {
+                        var input = $(this);
+                        output += 'Type: ' + input.attr('type') + 'Name: ' + input.attr('name') + 'Value: ' + input.val() + '\n';
+                    }
+                );
+                alert(output);
+            });
+        });
+    </script>
+
+
+</body>
